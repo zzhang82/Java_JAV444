@@ -54,8 +54,9 @@ public class Location {
             if(row <=0||column <=0) System.out.print("Wrong input value for the Rows and Columns, restart programs" + "\n");
 
         }while(row <=0||column <=0);
+
         //senariao keep testing
-       // while(row > 0 && column > 0){
+        // while(row > 0 && column > 0){
 
             double[][] temp = new double[row][column];
 
