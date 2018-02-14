@@ -8,6 +8,9 @@ public class main {
 
     public static void main(String[] args) {
         Account[] accounts = new Account[10];
+        //update:: Segment need to work because the system should be create the accounts when it init
+        //update:: so here should be add another safe vault for the auth on the account id matches
+        //update:: right now its only use the input to update the account id without any auth
         for (int i = 1; i < 11; i++) {
             accounts[i - 1] = new Account(i, 100.0);
         }
