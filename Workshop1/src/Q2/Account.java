@@ -6,10 +6,13 @@ import java.util.Date;
 
 public class Account {
 
-    private int id = 0;
-    private double balance = 0.0;
-    private static double annualInterestRate = 0.0;
+    private int id;
+    private double balance;
+    private static double annualInterestRate;
     private Date dateCreated;
+
+    //update:: this part is the use as the sicnario to use as the atm system to keep track on the account movements
+    //canADD:: this one can work better with the time stamp, right here i only used the transaction id as the position lock
     protected String records[];
     protected int transactionid =-1;
 
