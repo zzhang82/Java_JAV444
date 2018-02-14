@@ -20,14 +20,16 @@ public class main {
         //account.deposit(30);
         //System.out.println(account.toString());
 
-        savings.withdraw(250);
-        savings.deposit(30);
-        System.out.println(savings.toString());
+
 
 
         checking.withdraw(250);
         checking.deposit(30);
         System.out.println(checking.toString());
+
+        savings.withdraw(2504);
+        savings.deposit(30);
+        System.out.println(savings.toString());
 
 
 

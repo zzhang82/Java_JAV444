@@ -28,6 +28,7 @@ public class CheckingAccount extends Account {
     }
 
     public void withdraw(double amount) {
+        //update:: this one works as debug and also show as the bank normal transactions
         System.out.println("Checking Account: " + this.getId()+"\n"+ "$ "+amount+" Withdraw Processing.........");
         if (getBalance() - amount > overdraftLimit) {
             setBalance(getBalance() - amount);
@@ -37,7 +38,7 @@ public class CheckingAccount extends Account {
     }
 
     public String toString() {
-        return super.toString() + "\nOverdraft limit: $" +
-                overdraftLimit;
+        //updates:: format the string to work with the input requirement
+        return super.toString() + "This Checking Account Overdraft limit: $" + overdraftLimit+ "\n";
     }
 }
